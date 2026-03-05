@@ -73,5 +73,69 @@ This story is ranked Medium because while viewing a schedule improves user exper
 
 ---
 
-## User Stories #6–10  
-*(Insert your remaining user stories here following the same format: User Story, Description, Priority Justification)*
+## User Stories #6: Validate Prequisite and Enrollments Eligibity 
+**Priority:** High 
+
+**User Story:**
+As a student, I want to automatically verify that I have completed necessary foundational courses, so that I don't enroll in advanced technical or compliance training without the required prior knowledge.
+
+**Description:**
+This story includes the logic to cross-reference a user’s transcript against a course’s “prerequisite” field before allowing enrollment. It constraints users from bypassing requirements unless an admin override is applied. Success is defined as a 100% reduction in “accidental” enrollments in advanced courses by unqualified users.
+
+
+**Priority Justification:**
+This is a high priority because it ensures regulatory compliance and protects the bank from audit failures. By automating eligibility, the bank avoids the high operational cost of instructors teaching students who lack foundational knowledge. This feature is a critical technical dependency for accurate certification tracking and advanced reporting.
+
+
+## User Stories #7: Waitlist for Full Courses
+**Priority:** Medium
+
+**User Story:**
+As a student, I want to be put on a waitlist for a “Full” course, so that I can be automatically enrolled if a seat opens up or be notified of the next available session.
+
+**Description:**
+This functionality includes a First-In-First-Out (FIFO) queue for over-capacity courses and an automated notification trigger when a spot becomes available. A key constraint is that the waitlist must have a maximum capacity. Success looks like maintaining 100% seat utilization for all high-demand workshops 
+
+**Priority Justification:**
+This story is a medium priority as it optimizes resource utilization by ensuring no training seat go empty due to last-minute cancellations. While it significantly improves the employee experience and ROI for in-pesron sessions, it is not a “day-one” requirements for the system to function. It is best suited for a secondary release once core enrollment is stable.
+
+
+## User Stories #8: Personalize Dashboard Layout
+**Priority:** Low
+
+**User Story:**
+As a system user, I want to rearrange the widgets on my home dashboard, so that I can quickly access the information most relevant to my specific role.
+
+**Description:**
+This story includes “drag-and-drop” functionality for dashboard components and the ability to toggle specific data widgets on or off. A key constraint is that “Mandatory Notifications” cannot be hidden. Success is achieved when layouts persist across user sessions. 
+
+**Priority Justification:**
+Personlization is a low priority because it is “nice-to-have” UX improvement with not direct impact on core business logic or regulatory requirements. Since the feature is independent of the enrollment and grading engines, it carries no technical dependencies. It can be deferred to a later polishing phase without affecting the system’s primary goals. 
+
+
+## User Stories #9: Receive Enrollment Confirmation Notification
+**Priority:** Medium 
+
+**User Story:**
+As a student, I want to receive a confirmation notification after successfully enrolling in a class, so that I know my registration was processed correctly and I have proof of enrollment.
+
+**Description:**
+The story includes automatically sending an on-screen confirmation after a student successfully enrolls in a course. The notification will summarize key course details and only trigger once the enrollment is fully processed into the system. Success is achieved when students receive accurate confirmation immediately and registration related inquiries decrease. 
+
+**Priority Justification:**
+The story provides strong value by reassuring students during registration and reducing support requests to administrative staff. However, it does not block enrollment functionality and depends on the core registration system, placing it at Medium priority rather than High.
+
+
+## User Stories #10: Export Class Schedule as PDF
+**Priority:** Low
+
+**User Story:**
+As a student, I want to export my class schedule as a PDF, so that I can download, print, or share it for personal planning or documentation purposes. 
+
+**Description:**
+This story allows students to download a PDF version of their current class schedule in a printable format. The PDF must reflect real-time schedule data and work across all device types. Success is achieved by accurate and quick generation of a user-friendly, readable document. 
+
+**Priority Justification:**
+This feature improves convenience but does not impact core enrollment operations. It only really depends on completed schedule functionality and has no time sensitivity, therefore it is Low priority.
+
+
