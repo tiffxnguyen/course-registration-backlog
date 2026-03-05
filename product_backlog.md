@@ -86,6 +86,7 @@ This story includes the logic to cross-reference a user’s transcript against a
 **Priority Justification:**
 This is a high priority because it ensures regulatory compliance and protects the bank from audit failures. By automating eligibility, the bank avoids the high operational cost of instructors teaching students who lack foundational knowledge. This feature is a critical technical dependency for accurate certification tracking and advanced reporting.
 
+---
 
 ## User Stories #7: Waitlist for Full Courses
 **Priority:** Medium
@@ -99,6 +100,7 @@ This functionality includes a First-In-First-Out (FIFO) queue for over-capacity 
 **Priority Justification:**
 This story is a medium priority as it optimizes resource utilization by ensuring no training seat go empty due to last-minute cancellations. While it significantly improves the employee experience and ROI for in-pesron sessions, it is not a “day-one” requirements for the system to function. It is best suited for a secondary release once core enrollment is stable.
 
+---
 
 ## User Stories #8: Personalize Dashboard Layout
 **Priority:** Low
@@ -112,6 +114,7 @@ This story includes “drag-and-drop” functionality for dashboard components a
 **Priority Justification:**
 Personlization is a low priority because it is “nice-to-have” UX improvement with not direct impact on core business logic or regulatory requirements. Since the feature is independent of the enrollment and grading engines, it carries no technical dependencies. It can be deferred to a later polishing phase without affecting the system’s primary goals. 
 
+---
 
 ## User Stories #9: Receive Enrollment Confirmation Notification
 **Priority:** Medium 
@@ -125,6 +128,7 @@ The story includes automatically sending an on-screen confirmation after a stude
 **Priority Justification:**
 The story provides strong value by reassuring students during registration and reducing support requests to administrative staff. However, it does not block enrollment functionality and depends on the core registration system, placing it at Medium priority rather than High.
 
+---
 
 ## User Stories #10: Export Class Schedule as PDF
 **Priority:** Low
